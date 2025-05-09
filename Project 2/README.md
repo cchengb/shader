@@ -38,7 +38,7 @@ The shader was applied to both **Sphere** and **Dragon** models, showcasing how 
 
 > 📷 _Add screenshots here if available in `images/` folder with markdown below:_
 ```markdown
-![Dragon with Noisy Elliptical Dots](images/proj0204.png)
-![Dragon with Noise and Edge Blending](images/proj0203.png)
-![Dragon with Noise and Edge Blending](images/proj0202.png)
-![Dragon with Noise and Edge Blending](images/proj0201.png)
+![Dragon with Noisy Elliptical Dots](images/pro0204.png)
+![Dragon with Noise and Edge Blending](images/pro0203.png)
+![Dragon with Noise and Edge Blending](images/pro0202.png)
+![Dragon with Noise and Edge Blending](images/pro0201.png)
