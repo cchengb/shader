@@ -53,7 +53,7 @@ All parameters are configurable in the `.glib` file.
 
 Add screenshots using:
 
-```markdown
+
 ![Snake Ripple Motion](images/proj0601.png)
 ![Snake Texture Blending](images/proj0602.png)
 ![Snake Texture Blending](images/proj0603.png)
