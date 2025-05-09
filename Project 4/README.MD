@@ -56,5 +56,5 @@ The rendered results demonstrate:
 Add screenshots in your repository like this:
 
 
-![Refraction](images/pro04.01.png.png)
+![Refraction](images/pro04.01.png)
 ![Reflection + Noise](images/pro04.02.png)
