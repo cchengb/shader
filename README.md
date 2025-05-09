@@ -24,9 +24,9 @@ Each project folder contains:
 | [Project 3️⃣](./Project%203) | Displacement Mapping, Bump Mapping, and Lighting	 |
 | [Project 4️⃣](./Project%204) | Cube Mapping Reflective and Refractive Surfacesn |
 | [Project 5️⃣](./Project%205) | Image Manipulation	 |
-| [Project 6️⃣](./Project%206) | The Snake Menageries (Fire Snake) |
-| [Project 7️⃣](./Project%207) | Geometry Shaders |
-| [Final Project](./Final%20Project) | Interior Ice Parallax Shader |
+| [Project 6️⃣](./Project%206) | The Snake Menageries (Crazy Color Snake) |
+| [Project 7️⃣](./Project%207) | Geometry Shaders Nemo |
+| [Final Project](./Final%20Project) | Bring Coral to life |
 
 ## 🛠️ Technologies Used
   * glman
