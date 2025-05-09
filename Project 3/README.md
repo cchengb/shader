@@ -51,5 +51,5 @@ Building on 3A, this phase integrates **bump mapping** to enhance surface textur
 Add screenshots here once stored in your repo:
 
 ```markdown
-![Curtain with displacement only](images/proj03.01.png)
+![Curtain with displacement only](images/pro03.01.png)
 ![Curtain with displacement + bump mapping](images/pro03.02.png)
