@@ -54,9 +54,9 @@ All parameters are configurable in the `.glib` file.
 Add screenshots using:
 
 
-![Snake Ripple Motion](images/proj0601.png)
-![Snake Texture Blending](images/proj0602.png)
-![Snake Texture Blending](images/proj0603.png)
-![Snake Texture Blending](images/proj0604.png)
-![Snake Texture Blending](images/proj0605.png)
-![Snake Texture Blending](images/proj0606.png)
+![Snake Ripple Motion](images/proj601.png)
+![Snake Texture Blending](images/proj602.png)
+![Snake Texture Blending](images/proj603.png)
+![Snake Texture Blending](images/proj604.png)
+![Snake Texture Blending](images/proj605.png)
+![Snake Texture Blending](images/proj606.png)
