@@ -37,7 +37,7 @@ This project builds upon the previous elliptical dot shader by introducing **3D 
 The shader was applied to both **Sphere** and **Dragon** models, showcasing how parameter changes affect dot shape, noise distortion, and blending edges.
 
 > 📷 _Add screenshots here if available in `images/` folder with markdown below:_
-```markdown
+
 ![Dragon with Noisy Elliptical Dots](images/pro0204.png)
 ![Dragon with Noise and Edge Blending](images/pro0203.png)
 ![Dragon with Noise and Edge Blending](images/pro0202.png)
