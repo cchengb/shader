@@ -66,7 +66,7 @@ Outside the lens, the original image remains unaffected, creating a striking con
 
 Include screenshots using:
 
-```markdown
+
 ![Magic Lens – Magnification](images/proj05.01.png)
 ![Magic Lens – Whirl](images/proj05.02.png)
 ![Magic Lens – Mosaic](images/proj05.03.png)
