@@ -1,8 +1,6 @@
 # CS 457 Project #1 - Step- and Blended-edged Elliptical Dots
 
 **Author**: Colin Cheng  
-**Email**: chenlinl@oregonstate.edu  
-**Course**: CS 457 - Computer Graphics  
 
 ## 🧠 Project Description
 

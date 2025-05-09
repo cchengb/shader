@@ -1,0 +1,53 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 10  0 0 0  0 1 0
+
+#-----------------------------
+# Desert Textured Walls/Floors
+#-----------------------------
+Vertex   texture.vert
+Fragment texture.frag
+Program  Texture TexUnit 6
+
+Texture2D 6 water.bmp
+QuadYZ 25. 25. 400 400
+
+Texture2D 6 water.bmp
+QuadYZ -25. 25. 400 400
+
+Texture2D 6 water.bmp
+QuadXZ 25. 25. 400 400
+
+Texture2D 6 water.bmp
+QuadXZ -25. 25. 400 400
+
+Texture2D 6 water.bmp
+QuadXY 25. 25. 400 400
+
+Texture2D 6 water.bmp
+QuadXY -25. 25. 400 400
+
+Texture2D 7 snake3.bmp
+
+Vertex   snake.vert
+Fragment snake.frag
+Program  snake                                     \
+    XAmp       <-8., 1., 8.>                       \
+    YAmp       <-8., 1., 8.>                       \
+    ZAmp       <-8., 1., 8.>                       \
+    Period      <0., 1., 8.>                       \
+    uKa         <0.0, 0.1, 1.0>                    \
+    uKd         <0.0, 0.5, 1.0>                    \
+    uKs         <0.0, 0.4, 1.0>                    \
+    uShininess  <2.0, 12.0, 100.0>                 \
+    uNoiseAmp   <0.1, 0.5, 8.0>                    \
+    uNoiseFreq  <0.1, 0.5, 8.0>					   \
+	HeadCenter   <6.2, 0.0, 0.0> 		   		   \
+	HeadRadius   <0.0, 0.5, 20.0>  				   \
+	blendFactor  <0.0, 0.7, 1.0>  				   \
+	snakeTex	TexUnit 7						   \
+	uShowTexOnly <0.0, 0.0, 1.0>  				   \
+	
+
+Obj pillar_coral.obj

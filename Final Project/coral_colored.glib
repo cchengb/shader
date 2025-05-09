@@ -1,0 +1,297 @@
+##OpenGL GLIB
+Perspective 70
+LookAt 0 0 10  0 0 0  0 1 0
+
+Texture2D 8 fish.bmp
+Texture2D 7 coral_texture1.bmp
+Texture2D 5 coral_texture3.bmp
+Texture2D 9 coral_texture4.bmp
+
+Vertex   fish.vert
+Fragment fish.frag
+Program Fish                        \
+    Timer <0.0, 0.1, 1.0>           \
+    uSwimSpeed <0.5, 4.0, 10.0>     \
+    uSwimRadius <1.0, 3.0, 12.0>    \
+    uWaveHeight <0.1, 0.2, 3.0>     \
+    uAlphaCutoff <0.2, 0.5, 1.0>    \
+    fishTexture 8
+
+Transformbegin
+  Translate -1 2 0
+  Rotate 135 0 1 0 
+  Rotate -90 1 0 0
+  Scale 0.05 0.05 0.05
+  Program Fish
+  Obj fish.obj
+Transformend
+
+Transformbegin
+  Translate 6 10 2
+  Rotate -90 1 0 0
+  Scale 0.1 0.1 0.1
+  Program Fish
+  Obj fish.obj
+Transformend
+
+Transformbegin
+  Translate 7 8 4
+  Rotate -90 1 0 0
+  Scale 0.05 0.05 0.05
+  Program Fish
+  Obj fish.obj
+Transformend
+
+Transformbegin
+  Translate 8 8 5
+  Rotate -90 1 0 0
+  Scale 0.05 0.05 0.05
+  Program Fish
+  Obj fish.obj
+Transformend
+
+Transformbegin
+  Translate 9 7 7
+  Rotate -90 1 0 0
+  Scale 0.05 0.05 0.05
+  Program Fish
+  Obj fish.obj
+Transformend
+
+Transformbegin
+  Translate 10 8 8
+  Rotate -90 1 0 0
+  Scale 0.05 0.05 0.05
+  Program Fish
+  Obj fish.obj
+Transformend
+
+Vertex   texture.vert
+Fragment texture.frag
+Program  Texture TexUnit 6
+
+Texture2D 6 water.bmp
+QuadYZ 35. 35. 475 475
+
+Texture2D 6 water.bmp
+QuadYZ -35. 35. 475 475
+
+Texture2D 6 water.bmp
+QuadXZ 35. 35. 475 475
+
+Texture2D 6 bottom_sand.bmp
+QuadXZ -7. 35. 475 475
+
+Texture2D 6 water.bmp
+QuadXY 35. 35. 475 475
+
+Texture2D 6 water.bmp
+QuadXY -35. 35. 475 475
+
+Vertex   texture.vert
+Fragment texture.frag
+Program  Texture TexUnit 12
+
+Texture2D 12 bottom_blue.bmp
+
+Transformbegin
+  Translate 0 -6 0
+  Rotate 0 1 0 0
+  Scale 0.115 0.115 0.115
+  Obj rockwall.obj
+Transformend
+
+Texture2D 10 coral_texture4.bmp
+Texture2D 11 coral_texture2.bmp
+
+Vertex   squid.vert
+Fragment squid.frag
+Program Squid                       \
+    Timer <0.0, 0.1, 1.0>           \
+    uReflectUnit 10                 \
+    uRefractUnit 11                 \
+    uMix <0. 0. 1.> 		            \
+    uEta <0.0 1.0120 2.0>		        \
+    uWhiteMix <0.0 0. 0.5> 	        \
+    uWaveSpeed <0.5, 1.0, 10.0>     \
+    uWaveHeight <0.1, 0.3, 28.0>    \
+    uWaveFrequency <1.0, 3.0, 20.0> \
+    uCircleRadius <2.0, 3.0, 10.0>  \
+    uCircleSpeed <1.0, 2.0, 5.0>    \
+    uNoiseAmp <0.0, 0.5, 5.0>       \
+    uNoiseFreq <0.01, 0.1, 0.5>     \
+    squidTexture  7                 \
+    Noise3 9
+
+Transformbegin
+  Translate 0 5 -15
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.6 0.6 0.6
+  Obj squid.obj
+Transformend
+
+Transformbegin
+  Translate -15 13 -8
+  Rotate -90 1 0 0
+  Scale  0.2 0.2 0.2
+  Obj squid.obj
+Transformend
+
+Vertex   coral_colored.vert
+Fragment coral_colored.frag
+Program Coral_colored                                  \
+    uX1      <-2.5,  0.10, 10.0>                       \
+    uY1      <-2.8,  0.15, 10.2>                       \
+    uAmp1    <0.05,  0.10, 0.5>                        \
+    uFreq1   <0.5,   6.0, 10.0>                        \
+    uDecay1  <0.2,   1.0, 18.0>                        \
+    uX2      <-3.0, -2.5, 12.8>                        \
+    uY2      <-3.2, -2.8, 13.0>                        \
+    uAmp2    <0.08,  0.12, 0.6>                        \
+    uFreq2   <0.3,   5.0, 19.0>                        \
+    uDecay2  <0.5,   1.5, 17.5>                        \
+    uX3      <-2.7,  2.2, 13.5>                        \
+    uY3      <-2.5,  2.0, 13.3>                        \
+    uAmp3    <0.06,  0.15, 0.55>                       \
+    uFreq3   <0.7,   4.5, 21.0>                        \
+    uDecay3  <0.3,   2.0, 29.0>                        \
+    Timer    <0.0,   0.0, 1.0>                         \
+    CoralFade <0.0, 1.0, 1.0>                          \
+    uNoiseAmp <0.0, 0.2, 2.0>                          \
+    uNoiseFreq <0.1, 1.0, 5.0>                         \
+    uKa       <0.0, 0.3, 1.0>                          \
+    uKd       <0.0, 0.6, 1.0>                          \
+    uKs       <0.0, 0.4, 1.0>                          \
+    uShininess <2.0, 12.0, 100.0>                      \
+    blendFactor <0.0, 0.7, 1.0>                        \
+    uShowTexOnly <0.0, 0.0, 1.0>                       \
+    coralTexture  5
+
+Transformbegin
+  Translate 8 -5 0
+  Rotate -90 1 0 0
+  Scale 1.5 1.5 1.5
+  Obj pillar_coral.obj
+Transformend
+
+Transformbegin
+  Translate -5 -5 0
+  Rotate -90 1 0 0
+  Scale 2 2 2
+  Obj pillar_coral.obj
+Transformend
+
+
+Transformbegin
+  Translate 15 -5 -5
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj pillar_coral.obj
+Transformend
+
+Transformbegin
+  Translate -15 -5 -10
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj urchin.obj
+Transformend
+
+Transformbegin
+  Translate -22 -5 -15
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj urchin.obj
+Transformend
+
+Transformbegin
+  Translate -24 -5 -10
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj urchin.obj
+Transformend
+
+Transformbegin
+  Translate -19 -5 5
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj urchin.obj
+Transformend
+
+Transformbegin
+  Translate 19 -5 5
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj urchin.obj
+Transformend
+
+Transformbegin
+  Translate 19 -5 0
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj urchin.obj
+Transformend
+
+Transformbegin
+  Translate 19 -5 -20
+  Rotate -90 1 0 0
+  Scale 1 1 1
+  Obj urchin.obj
+Transformend
+
+Transformbegin
+  Translate -18 -5 10
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.4 0.4 0.4
+  Obj sea_cucumber.obj
+Transformend
+
+Transformbegin
+  Translate -15 -5 12
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.4 0.4 0.4
+  Obj sea_cucumber.obj
+Transformend
+
+Transformbegin
+  Translate -10 -5 16
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.4 0.4 0.4
+  Obj sea_cucumber.obj
+Transformend
+
+
+Transformbegin
+  Translate -5 -5 12
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.4 0.4 0.4
+  Obj sea_cucumber.obj
+Transformend
+
+Transformbegin
+  Translate 7 -5 13
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.4 0.4 0.4
+  Obj sea_cucumber.obj
+Transformend
+
+Transformbegin
+  Translate 0 -5 14
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.4 0.4 0.4
+  Obj starfish.obj
+Transformend
+
+Transformbegin
+  Translate 2 -5 -15
+  Rotate 90 0 1 0 
+  Rotate -90 1 0 0
+  Scale  0.4 0.4 0.4
+  Obj starfish.obj
+Transformend
